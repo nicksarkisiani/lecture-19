@@ -1,14 +1,20 @@
-import { Outlet } from "react-router"
+import { Outlet, useNavigate } from "react-router"
 
 function App() {
 
+  const navigate = useNavigate();
+
   return (
     <>
-      <header>123123</header>
+      <header>
+       <button onClick={() => navigate("/")}>Home</button>
+       <button onClick={() => navigate("/contact")}>Contact</button>
+
+      </header>
 
       <Outlet />
 
-      <footer>dsfdsfsdf</footer>
+      <footer>footer</footer>
     </>
   )
 }

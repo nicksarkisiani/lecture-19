@@ -8,11 +8,30 @@ const router = createBrowserRouter([
     {
 
         path: "/",
-        element: <App />,
+        Component: App,
+        errorElement: <div>error</div>,
         children: [
             {
                 path: "/",
                 element: <MainPage />,
+                // children: [
+
+                //     {
+                //         path: "/apple",
+                //         children: [
+                //             {
+                //                 path: "/iphone-6"
+                //             },
+                //             {
+                //                 path: "/iphone-8"
+                //             }
+                //         ]
+                //     },
+                //     {
+                //         path: "/samsung",
+                //     },
+
+                // ]
 
             }, {
                 path: "/contact",
