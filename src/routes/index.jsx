@@ -6,7 +6,6 @@ import MainPage from "../pages/main/MainPage";
 
 const router = createBrowserRouter([
     {
-
         path: "/",
         Component: App,
         errorElement: <div>error</div>,
@@ -42,6 +41,10 @@ const router = createBrowserRouter([
 
 
     },
+    {
+        path: "/dashboard",
+        element: <div>123123123</div>
+    }
 ])
 
 
