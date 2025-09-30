@@ -1,8 +1,14 @@
+import { Outlet } from "react-router"
+
 function App() {
 
   return (
     <>
-      123123123
+      <header>123123</header>
+
+      <Outlet />
+
+      <footer>dsfdsfsdf</footer>
     </>
   )
 }
